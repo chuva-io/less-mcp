@@ -30,3 +30,23 @@ This MCP server provides comprehensive tools for:
 ### Multi-Language Support
 
 All resources support JavaScript, TypeScript, and Python, with more languages coming soon.
+
+## Installation
+
+### VS Code
+
+The easiest way to add Less to your VS Code workspace is by adding the following to your `.vscode/mcp.json`:
+
+```json
+{
+  "servers": {
+    "Less": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@chuva.io/less-mcp"]
+    }
+  }
+}
+```
+
+Learn more and see other config options in the [VS Code Copilot documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers#_add-an-mcp-server).
