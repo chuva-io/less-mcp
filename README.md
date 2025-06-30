@@ -50,3 +50,33 @@ The easiest way to add Less to your VS Code workspace is by adding the following
 ```
 
 Learn more and see other config options in the [VS Code Copilot documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers#_add-an-mcp-server).
+
+### Windsurf
+
+Set up Less MCP in Windsurf by adding the following to your `mcp_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "Less": {
+      "command": "npx",
+      "args": ["-y", "@chuva.io/less-mcp"]
+    }
+  }
+}
+```
+
+### Cursor
+
+Set up Less MCP in Cursor by adding the following to your `.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "Less": {
+      "command": "npx",
+      "args": ["-y", "@chuva.io/less-mcp"]
+    }
+  }
+}
+```
